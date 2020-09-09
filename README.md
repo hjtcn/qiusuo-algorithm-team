@@ -8,3 +8,5 @@
 ## 全体注意
 
 不允许在master直接更改代码并推送到远程(git push)
+
+从master切入新分支，在新分支进行开发(git checkout -b new_branch_name)

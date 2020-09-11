@@ -39,7 +39,7 @@
 
 1. 当代码推送到远程时，GitHub远程仓库会自动新增顶部提示Compare & pull request, 这是快捷方式去创建Pull request
 
-    * [compare & pull request](./Resource/images/origin.png)
+    * [ompare & pull request](./Resource/images/origin.png)
 
 2. 正常是在项目中点击Pull Request，可点击Compare & pull request 或 New pull request来创建Pull request
 
@@ -54,7 +54,9 @@
     * [Message of pull request](./Resource/images/git_create_merge.png)
 
 5. Pull request 创建完成后就需要进行 Merge pull request（注意: 必须至少两人进行Code Review, 并且进行评论 "lgtm"）
-
+    
+    * lgtm: Looks good to me
+    
     * [Merge pull Request](./Resource/images/comment.png)
 
 6. 点击Merge pull request 后进入Confirm merge页面, 点击Confirm merge 完成代码合并
@@ -67,7 +69,7 @@
 
 8. 此时钉钉群GitHub机器人进行推送"Pull request closed" 的通知, 可认为是合并通过的通知
 
-    * [Message Merged](./Resource/images/git_confirm_merge.png)
+    * [Message of Merged](./Resource/images/git_confirm_merge.png)
 
 > ## 刷题平台
 >

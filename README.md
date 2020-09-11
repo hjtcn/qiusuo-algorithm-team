@@ -38,7 +38,7 @@
 #### 代码合并示例
 
 1. 当代码推送到远程时，GitHub远程仓库会自动新增顶部提示Compare & pull request, 这是快捷方式去创建Pull request
-![compare & pull request](./Resource/images/origin.png){:height="100px" width="100"}
+![compare & pull request](./Resource/images/origin.png)
 
 2. 正常是在项目中点击Pull Request，可点击Compare & pull request 或 New pull request来创建Pull request
 ![pull request](./Resource/images/compare.png)

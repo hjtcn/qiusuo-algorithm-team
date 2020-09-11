@@ -19,9 +19,21 @@
 
 ## 全体注意
 
-不允许在master直接更改代码并推送到远程(git push)
+#### 分支说明
 
-从master切入新分支，在新分支进行开发(git checkout -b new_branch_name)
+* 不允许在master直接更改代码并推送到远程(git push)
+
+* 从master切入新分支，在新分支进行开发(git checkout -b new_branch_name)
+
+* 源分支合并到master分支后将自动删除
+
+#### 代码提交说明
+
+* 本地分支开发完成后，将代码推送到远程分支
+
+* 然后将开发分支和master进行Compare & Pull request
+
+* 最后完成分支合并
 
 > ## 刷题平台
 >

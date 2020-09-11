@@ -38,28 +38,36 @@
 #### 代码合并示例
 
 1. 当代码推送到远程时，GitHub远程仓库会自动新增顶部提示Compare & pull request, 这是快捷方式去创建Pull request
-![compare & pull request](./Resource/images/origin.png)
+
+    * [compare & pull request](./Resource/images/origin.png)
 
 2. 正常是在项目中点击Pull Request，可点击Compare & pull request 或 New pull request来创建Pull request
-![pull request](./Resource/images/compare.png)
+
+    * [Pull request](./Resource/images/compare.png)
 
 3. 接着就是选择要合并到master的分支并点击 Create pull request
-![Create pull request](./Resource/images/create_pull_request.png)
+
+    * [Create pull request](./Resource/images/create_pull_request.png)
 
 4. 然后钉钉群的GitHub机器人会推送 Pull request 创建的消息, 可进行点击进行Code Review
-![Message of pull request](./Resource/images/git_create_merge.png)
+    
+    * [Message of pull request](./Resource/images/git_create_merge.png)
 
 5. Pull request 创建完成后就需要进行 Merge pull request（注意: 必须至少两人进行Code Review, 并且进行评论 "lgtm"）
-![Merge pull Request](./Resource/images/comment.png)
+
+    * [Merge pull Request](./Resource/images/comment.png)
 
 6. 点击Merge pull request 后进入Confirm merge页面, 点击Confirm merge 完成代码合并
-![Confirm merge](./Resource/images/confirm_merge.png)
+
+    * [Confirm merge](./Resource/images/confirm_merge.png)
 
 7. 最终就完成分支代码合并到master
-![Merged](./Resource/images/merged.png)
+
+    * [Merged](./Resource/images/merged.png)
 
 8. 此时钉钉群GitHub机器人进行推送"Pull request closed" 的通知, 可认为是合并通过的通知
-![Message Merged](./Resource/images/git_confirm_merge.png)
+
+    * [Message Merged](./Resource/images/git_confirm_merge.png)
 
 > ## 刷题平台
 >

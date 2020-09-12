@@ -41,7 +41,7 @@
 
 1. 当代码推送到远程时，GitHub远程仓库会自动新增顶部提示Compare & pull request, 这是快捷方式去创建Pull request
 
-    * [Cmpare & pull request](./Resource/images/origin.png)
+    * [Compare & pull request](./Resource/images/origin.png)
 
 2. 正常是在项目中点击Pull Request，可点击Compare & pull request 或 New pull request来创建Pull request
 
@@ -72,6 +72,14 @@
 8. 此时钉钉群GitHub机器人进行推送"Pull request closed" 的通知, 可认为是合并通过的通知
 
     * [Message of Merged](./Resource/images/git_confirm_merge.png)
+
+#### 人员信息
+
+| 姓名 | GitHub名称 | 本地配置名称 |
+| :---: |   :---:    |   :---:  |
+|黑江涛|    hjtcn    | BenBird |
+|     |             |         |
+|     |             |         |
 
 > ## 刷题平台
 >

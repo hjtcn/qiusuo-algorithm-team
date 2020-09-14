@@ -79,7 +79,7 @@
 | :---: |   :---:    |   :---:  | :---: |
 |黑江涛|    hjtcn    | BenBird | BenBird |
 |马勤尧|  mqycngods  |   lm    |  lm-js  |
-|王涛 |     Tacks9   |  tacks9 |         |
+|王涛 |     Tacks9   |  tacks9 |   Tacks |
 
 > ## 刷题平台
 >

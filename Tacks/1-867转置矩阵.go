@@ -56,8 +56,8 @@ func transpose1(A [][]int) [][]int {
 	}
 
 	// 双层for循环
-	for i := 0; i < row; i++ {
-		for j := 0; j < col; j++ {
+	for i := 0; i < col; i++ {
+		for j := 0; j < row; j++ {
 			res[j][i] = A[i][j]
 		}
 	}
@@ -75,9 +75,9 @@ func transpose(A [][]int) [][]int {
 	var res [][]int
 
 	// 双层for循环
-	for i := 0; i < row; i++ {
+	for i := 0; i < col; i++ {
 		var temp []int // 申请切片
-		for j := 0; j < col; j++ {
+		for j := 0; j < row; j++ {
 			temp = append(temp, A[j][i]) // 矩阵转置
 		}
 		res = append(res, temp) // 采用append进行追加到切片元素中

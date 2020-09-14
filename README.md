@@ -78,7 +78,7 @@
 | 姓名 | GitHub名称 | 本地配置名称 |  目录  |
 | :---: |   :---:    |   :---:  | :---: |
 |黑江涛|    hjtcn    | BenBird | BenBird |
-|马勤尧|  mqycngods  |   lm    |         |
+|马勤尧|  mqycngods  |   lm    |  lm-js  |
 |王涛 |     Tacks9   |  tacks9 |   Tacks |
 
 > ## 刷题平台

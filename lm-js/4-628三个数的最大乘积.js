@@ -19,24 +19,26 @@
  * @return {number}
  */
 var maximumProduct = function (nums) {
-    //先从小到大排序，可知道三个数字最大的乘积，只可能出现在nums[0],nums[1],nums[len-1],nums[len-2],nums[len-3]之间，且num[len-1]肯定会存在
-    //故只需比较(nums[len-1]*nums[0]*nums[1],nums[len-1]*nums[len-2]*nums[len-3])的值谁大就行
+    //先从小到大排序，可知道三个数字最大的乘积，只可能出现在nums[0],nums[1],nums[len-1],nums[len-2],nums[len-3]之间，且nums[len-1]肯定会存在
     nums.sort((a, b) => a - b)
     let right = nums.length - 1
+    //存储最大值
     let res = nums[right]
+    //记录最小两个数的乘积值，最大两个数的乘积值
     let num1 = nums[0] * nums[1], num2 = nums[right - 1] * nums[right - 2]
-    res = res * Math.max(num1, num2)
+    //比较三个数乘积的大小。
+    res = Math.max(res * num1, res * num2)
     return res
 };
 
 /** 题解
 三个数的最大乘积。先sort排序（数组长度<10?'插入排序':'快排'）
-先从小到大排序，可知道三个数字最大的乘积，只可能出现在nums[0],nums[1],nums[len-1],nums[len-2],nums[len-3]之间，且num[len-1]肯定会存在
+先从小到大排序，可知道三个数字最大的乘积，只可能出现在nums[0],nums[1],nums[len-1],nums[len-2],nums[len-3]之间，且nums[len-1]肯定会存在
 故只需比较(nums[len-1]*nums[0]*nums[1],nums[len-1]*nums[len-2]*nums[len-3])的值谁大就行
 
  复杂度分析：
-    平均时间复杂度是:nlogn
-    快排的平局时间复杂度事nlogn
+    平均时间复杂度是:O(nlogn)
+    快排的平局时间复杂度是O(nlogn)
     空间复杂度：O(1)
     定义了几个变量，存放比大小的值
  */

@@ -55,3 +55,17 @@ func main() {
 	res := threeConsecutiveOdds(arr)
 	fmt.Println(res)
 }
+
+/**
+题解
+连续三个奇数数组
+
+耗时：4ms
+内存：2.6M
+
+循环遍历数组arr, 连续遇到奇数的个数记为nums, 当nums == 3时返回true, 当遇到偶数就将nums 置为 0, 最后判断nums 是否等于 3
+
+复杂度分析：
+	时间复杂度：O(n)
+	空间复杂度：O(1)
+ */

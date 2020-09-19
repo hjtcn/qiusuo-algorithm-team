@@ -29,7 +29,7 @@ func containsNearbyDuplicate(nums []int, k int) bool {
 
 	for key, val := range nums {
 		if _, ok := temp_map[val]; ok {
-			return true;
+			return true
 		}
 		temp_map[val] = 1
 

@@ -1,3 +1,4 @@
+<?php
 /*
  * @lc app=leetcode.cn id=219 lang=php
  *
@@ -49,8 +50,17 @@ class Solution {
         $size = count($nums); // 数组大小
         for($i = 0; $i<$size; $i++){ // 固定i的位置，然后看j
             // 这里采用跟之前的k个元素进行比较
+            /*
             for($j = max($i-$k,0); $j<$i; $j++) { // 将每个元素与它之前的k 个元素中比较查看它们是否相等
                 if($nums[$i] == $nums[$j]){
+                    return true;
+                }
+            }
+            */
+            // 这里采用跟当前i位置之后的k的元素进行比较 ，其实这两种没有什么区别。
+            for($j = $i+1; $j-$i<= $k; $j++) {
+                // 因为j++，可能已经到数组末尾，所以需要判断 当前j位置元素是否存在。
+                if(isset($nums[$j]) && ($nums[$i] == $nums[$j]) ){
                     return true;
                 }
             }
@@ -74,8 +84,30 @@ class Solution {
         }
         return false;
     }
+
+    // 函数法
+    // 根据小马姐的思路进行编写 
+    // 也是超出时间限制！
+    function containsNearbyDuplicate3($nums, $k) {
+        foreach($nums as $i=>$item) {
+            // 当然这里不用担心，k要截取的超出nums的长度，array_slice会感知到，并且只截取到nums的末尾
+            $slideArr =  array_slice($nums, $i+1, $k); // 拿到中间数组
+            if(in_array($item, $slideArr)) {
+                return true;
+            }
+        }
+        return false;
+    } 
 }
 // @lc code=end
+
+
+// 测试数据
+$obj = new  Solution();
+
+$arr = [0,1,2,3,4,5,0]; // [0,1,2,3,4,5,0] 5  
+$k = 3;
+var_dump($obj->containsNearbyDuplicate3($arr,$k));
 
 
 // @tacks think=start
@@ -149,6 +181,18 @@ class Solution {
     综上所述
         时间复杂度 O(n) 。 
         空间复杂度 O(min(n,k))。
+
+【3】 函数法  超出时间限制
+
+    PHP的数组很强大，而且数组的函数操作也是挺多的，非常灵活，在日常开发中也是经常使用到。
+    
+    遍历该数组
+        然后截取当前位置i+1 到i+1+k位置之间的数组 => 中间数组 => 也就是大小为k滑动窗口
+            PHP可以使用array_slice(array,offset,length)函数
+                也就是array_slice(nums, i+1, k)  => slideArr 滑动数组
+        再判断这个中间数组中，是否包含当前元素。
+            PHP可以使用 in_array(search,array)函数进行判断
+                也就是 in_array(nums[i],slideArr)  存在返回true 失败返回 false
 */
 // @tacks think=end
 

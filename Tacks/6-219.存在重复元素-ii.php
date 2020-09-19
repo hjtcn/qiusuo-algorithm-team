@@ -105,7 +105,7 @@ class Solution {
 // 测试数据
 $obj = new  Solution();
 
-$arr = [0,1,2,3,4,5,0]; // [0,1,2,3,4,5,0] 5  
+$arr = [0,1,2,3,4,5,0];  
 $k = 3;
 var_dump($obj->containsNearbyDuplicate3($arr,$k));
 
@@ -177,10 +177,10 @@ var_dump($obj->containsNearbyDuplicate3($arr,$k));
         也就是遍历数组的时间O(n)
         hash数组操作元素时间O(1)
     空间复杂度
-        额外申请一个hash数组，那么大小也就是k的大小。或者是整个数组。
-    综上所述
-        时间复杂度 O(n) 。 
-        空间复杂度 O(min(n,k))。
+        额外申请一个hash数组。
+    综上所述n
+        时间复杂度 O(n)。 
+        空间复杂度 O(n)。
 
 【3】 函数法  超出时间限制
 

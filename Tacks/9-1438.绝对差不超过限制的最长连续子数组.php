@@ -72,6 +72,8 @@ class Solution {
      * @param Integer $limit
      * @return Integer
      */
+    // 单调增队列 
+    // 容易超时
     function longestSubarray1($nums, $limit) {
        
         $size = count($nums);
@@ -83,18 +85,18 @@ class Solution {
         $result= 0;
         for($i = 0, $j = 0; $i< $size; $i++) {
             // 单调增队列 维护最小值
-            while(!$Q1->isEmpty() && $Q1->back() > $nums[$i]) {
+            while(!$Q1->isEmpty() && $Q1->back() >= $nums[$i]) {
                 $Q1->pop_back();
             }
             $Q1->push_back($nums[$i]); // 放进去最小值
             // 单调减队列 维护最大值
-            while(!$Q2->isEmpty() && $Q2->back() < $nums[$i]) {
+            while(!$Q2->isEmpty() && $Q2->back() <= $nums[$i]) {
                 $Q2->pop_back();
             }
             $Q2->push_back($nums[$i]); // 放进去最大值
 
             // 超出滑动窗口大小
-            while(!$Q1->isEmpty() && !$Q2->isEmpty() && $Q2->front() - $Q1->front() > $limit) {
+            while(!$Q1->isEmpty() && !$Q2->isEmpty() && $Q2->front() - $Q1->front() >= $limit) {
                 if($nums[$j] == $Q1->front()) $Q1->pop_front(); // 从队头出队
                 if($nums[$j] == $Q2->front()) $Q2->pop_front();
                 $j++;
@@ -107,11 +109,74 @@ class Solution {
     }
 
  
+    // 双指针+滑动窗口
+    // 执行用时：3960 ms, 在所有 PHP 提交中击败了100.00%的用户
+    // 内存消耗：26.5 MB, 在所有 PHP 提交中击败100.00%的用户
+    function longestSubarray2($nums, $limit) {
+        $min = 0;
+        $max = 0;
+        $minIndex = 0;// 滑动窗口最小值的位置
+        $maxIndex = 0;// 滑动窗口最大值的位置
+        $i = 0;
+        $number = 1; // 窗口大小
+        $size = count($nums);
+        while($i < $size - 1 && $j < $size) {
+            $start = $i; //滑动窗口左边的值
+            $j = $i + 1;
+            // 符合题意要求 绝对值之差小于limit 进入循环，不断向后扩大滑动窗口大小
+            if(abs($nums[$j] - $nums[$i]) <= $limit) {
+                // 符号条件更新位置
+                if($nums[$j] > $nums[$i]) {
+                    $maxIndex = $j;
+                    $minIndex = $i;
+                }else{
+                    $maxIndex = $i;
+                    $minIndex = $j;
+                }
+                $max = max($nums[$j], $nums[$i]);
+                $min = min($nums[$j], $nums[$i]);
+                // 当前滑动窗口的最大 最小 之差小于 limit
+                while(abs($max - $min) <= $limit  && $j < $size){
+                    $j++; // 向后移动
+                    // 如果后面的元素，大于当前滑动窗口最大值
+                    if($nums[$j] >= $max) {
+                        // 最大值-最小值 不符合要求 ，滑动窗口左边收缩
+                        if($nums[$j] - $min > $limit) {
+                            $i = $minIndex + 1;// 移动i
+                        }else{
+                            // 并且符合要求，那么就更新最大值的位置
+                            $maxIndex = $j;
+                        }
+                    }
+                    // 如果后面的元素，小于当前滑动窗口最小值
+                    if($nums[$j] <= $min) {
+                        if($max - $nums[$j] > $limit) {
+                            // 不符合要求，滑动窗口收缩
+                            $i = $maxIndex + 1;
+                        }else{
+                            // 符合要求，更新最小值的位置
+                            $minIndex = $j;
+                        }
+                    }
+                    // 得到当前滑动窗口的最大值 和 最小值
+                    $max = max($nums[$j], $max);
+                    $min = min($nums[$j], $min);
+                }
+                // 记录窗口位置
+                $number = max($number , $j - $start);
+            }else{
+                // 不符合的直接跳过
+                $i++;
+            }
+        }
+        return $number;
+        
+    }
 
 }
 
  
-
+// 数组模拟队列
 class Queue 
 {
     private $queue;
@@ -174,24 +239,33 @@ class Queue
 // @lc code=end
 
 $obj = new Solution();
-// $obj->longestSubarray([8,2,4,7],4);
+// echo $obj->longestSubarray2([8,2,4,7],4);
 
 
 // @tacks think=start
 /*
 题意 meaning 
- 
- 
+  
     子数组！
 
     题意说，子数组任意的两个元素的绝对差 <= limit    也就是说， 子数组中最大值与最小值的差 <= limit
 
 关键 key 
      
+    “绝对值之差小于limit” “什么时候滑动窗口移动变化”
 
 想法 idea
  
+    这题足足花费三四个小时还是没整出来，看了题解，也没有PHP的，然后就读了好几个题解。
+先暂时记录一下，之后遇到同样类似的题，在会过头看一下。
 
+【1】双端单调队列实现
+    两个单调队列，一个单调增维护最小值，一个单调减维护最大值。
+    但是这个PHP容易超时。
+
+【2】双指针+滑动窗口
+    维护滑动窗口最大值最小值，并且保存其位置。
+    双指针在不断移动的时候，滑动窗口的大小也在变化，同时判断max-min <= limit 
   
 
 */

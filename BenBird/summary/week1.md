@@ -20,7 +20,7 @@
     
     - 转置矩阵的思路：
     
-        就是行列转换，其原理，就是讲行和列坐标进行互换即 nums[i][j] = nums[j][i]
+          就是行列转换，其原理，就是讲行和列坐标进行互换即 nums[i][j] = nums[j][i]
     
 2. [面试题17.10.主要元素](https://github.com/hjtcn/qiusuo-algorithm-team/blob/master/BenBird/2-%E9%9D%A2%E8%AF%95%E9%A2%981710%E4%B8%BB%E8%A6%81%E5%85%83%E7%B4%A0.go)
     

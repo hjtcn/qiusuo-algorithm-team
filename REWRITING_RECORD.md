@@ -33,8 +33,21 @@
 * Seventh day: 周总结
 
 #### The third week
+> `Tacks` 小涛出题 [链表模块]
 
-无
+* First day: [剑指 Offer 22. 链表中倒数第k个节点](https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/)
+
+* The next day: [[2]两数相加](https://leetcode-cn.com/problems/add-two-numbers/)
+
+* Third day: [[21]合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/)
+
+* Fourth day: [[445]两数相加 II](https://leetcode-cn.com/problems/add-two-numbers-ii/)
+
+* Fifth day: [剑指 Offer 52. 两个链表的第一个公共节点](https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/)
+
+* Sixth day: 复习本周题目
+
+* Seventh day: 周总结
 
 #### The fourth week
 

@@ -51,7 +51,19 @@
 
 #### The fourth week
 
-无
+* First day: [[876]链表的中间结点](https://leetcode-cn.com/problems/middle-of-the-linked-list/)
+
+* The next day: [剑指 Offer 24. 反转链表](https://leetcode-cn.com/problems/fan-zhuan-lian-biao-lcof/)
+
+* Third day: [[92]反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii/)
+
+* Fourth day: [[234]回文链表](https://leetcode-cn.com/problems/palindrome-linked-list/)
+
+* Fifth day: [[82]删除排序链表中的重复元素 II](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii/)
+
+* Sixth day: 复习本周题目
+
+* Seventh day: 周总结
 
 #### Fifth week
 

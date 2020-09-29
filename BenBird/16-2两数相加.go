@@ -49,7 +49,7 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 		sum = num1 + num2 + carry
 
 		if sum >= 10 {
-			carry = sum / 10
+			carry = 1
 			sum = sum % 10
 		} else {
 			carry = 0

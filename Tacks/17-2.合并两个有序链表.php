@@ -54,7 +54,7 @@ class Solution {
      * @param ListNode $l2
      * @return ListNode
      */
-    // 迭代
+    // 迭代1
     // 执行用时：8 ms, 在所有 PHP 提交中击败了86.16%的用户
     // 内存消耗：14.5 MB, 在所有 PHP 提交中击败了52.70%的用户
     function mergeTwoLists1($l1, $l2) {
@@ -73,6 +73,37 @@ class Solution {
         // 如果两个链表中还有一个没遍历完，直接加到后面
         $prev->next = ($l1 === null ? $l2 : $l1);
 
+        return $preHead->next;
+    }
+
+    // 迭代2
+    // 执行用时：12 ms, 在所有 PHP 提交中击败了50.91%的用户
+    // 内存消耗：14.6 MB, 在所有 PHP 提交中击败了34.23%的用户
+    function mergeTwoLists2($l1, $l2) {
+        $preHead = new ListNode(null); // 声明一个头指针用来等待返回最后得到整个链表。
+        $prev    = $preHead; // 这里是引用
+        // 采用或的关系，这样只要有一个不为空就一直遍历
+        while($l1 !== null || $l2 !== null) {
+            // 如果l1可能为空，那么就直接把l2赋值过去
+            if($l1 == null) {
+                $prev->next = $l2;
+                break;// 终止循环
+            }
+            // 同理，l2也可能为空
+            if($l2 == null) {
+                $prev->next = $l1;
+                break;
+            }
+            // 如果两个都不是空的时候在进行比较
+            if($l1->val <= $l2->val) {
+                $prev->next = $l1; // prev向后移动,向较小的值移动
+                $l1 = $l1->next;
+            }else{
+                $prev->next = $l2; 
+                $l2 = $l2->next;
+            }
+            $prev = $prev->next; // 当前节点也需要向后移动
+        }
         return $preHead->next;
     }
 
@@ -122,6 +153,8 @@ class Solution {
 【1】链表遍历比较法
     时间复杂度是:O(N)   (N是两个链表最短长度)
     空间复杂度是:O(N+M) (声明新的链表空间)
+
+    关于链表迭代的方式，老黑表示：&&改用|| 可能会更快一些，但是我实践过后，还是没有&&快。
 
 【2】链表递归比较法
     时间复杂度是：O(N+M) （都需要不断递归到最后空节点）

@@ -83,12 +83,16 @@ class Solution {
             $len++;
         }
         // 判断链表长度奇偶性 并获取中间节点的位置
+        /*
         if($len%2 == 0){
             $mid = $len/2 + 1;
         }else{
             $mid = ($len+1)/2;
         }
         $mid = $mid - 1;
+        */
+        // intval — 获取变量的整数值
+        $mid = intval($len/2); // 获取中间位置
         while($mid) {
             $mid--;
             $head = $head->next;
@@ -99,7 +103,7 @@ class Solution {
     // 快慢指针法
     // 执行用时：8 ms, 在所有 PHP 提交中击败了61.82%的用户
     // 内存消耗：14.2 MB, 在所有 PHP 提交中击败了97.22%的用户
-    function middleNode($head) {
+    function middleNode2($head) {
         $slow = $head;
         $fast = $head;
         // while($fast && $fast->next) {
@@ -147,5 +151,17 @@ class Solution {
  时间复杂度：O(N)
  空间复杂度：O(1)
 
+
+补充 replenish
+
+    小马姐对我的评论让我意识到了，原来其实可以不分奇偶性
+
+    采用  intval 函数 — 获取变量的整数值
+        $mid = intval($len/2); // 获取中间位置
+    比如 [1,2,3,4] 中间位置就是 intval(len/2) = 4/2 =  2
+    比如 [1,2,3]   中间位置就是 intval(len/2) = intval(3/2) = 1
+
+    因为PHP默认/除法是会有小数的，3/2=1.5 弱语言类型。
+    
 */
 // @tacks think=end

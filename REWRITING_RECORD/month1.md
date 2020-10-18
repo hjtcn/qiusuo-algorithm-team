@@ -64,7 +64,3 @@
 * Sixth day: 复习本周题目
 
 * Seventh day: 周总结
-
-#### Fifth week
-
-无

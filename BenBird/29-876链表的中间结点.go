@@ -64,7 +64,8 @@ func middleNode(head *ListNode) *ListNode {
 耗时：0ms
 内存：1.9M
 
-快慢
+快慢指针：
+	快慢指针slow, fast, fast指针移动速度是slow指针移动的2倍, 所以当fast指针移动到末尾时，slow指针一定是在链表中间位置
 
 复杂度分析：
 	时间复杂度：O(n)

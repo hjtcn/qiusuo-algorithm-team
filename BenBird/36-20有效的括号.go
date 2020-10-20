@@ -49,26 +49,25 @@ func isValid(s string) bool {
 		return false
 	}
 
-	brackets_map := map[string]string{
-		")" : "(",
-		"]" : "[",
-		"}" : "{",
+	brackets_map := map[rune]rune{
+		')' : '(',
+		']' : '[',
+		'}' : '{',
 	}
 
 	//互换brackets_map 键值
-	left_brackets := map[string]string {}
+	left_brackets := map[rune]rune {}
 	for key, val := range brackets_map {
 		left_brackets[val] = key
 	}
 
-	temp_stack := []string{}
+	temp_stack := []rune{}
 	for _, str := range s {
-		temp_str := string(str)
 		stack_len := len(temp_stack)
 
-		if _, ok := left_brackets[temp_str]; ok {
-			temp_stack = append(temp_stack, temp_str)
-		} else if (stack_len > 0) && (brackets_map[temp_str] == temp_stack[stack_len - 1]) {
+		if _, ok := left_brackets[str]; ok {
+			temp_stack = append(temp_stack, str)
+		} else if (stack_len > 0) && (brackets_map[str] == temp_stack[stack_len - 1]) {
 			temp_stack = temp_stack[:stack_len - 1]
 		} else {
 			return false

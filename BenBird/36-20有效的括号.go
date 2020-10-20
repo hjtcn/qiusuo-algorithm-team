@@ -45,10 +45,20 @@ import "fmt"
 
 //leetcode submit region begin(Prohibit modification and deletion)
 func isValid(s string) bool {
+	if (len(s) % 2) != 0 {
+		return false
+	}
+
 	brackets_map := map[string]string{
 		")" : "(",
 		"]" : "[",
 		"}" : "{",
+	}
+
+	//互换brackets_map 键值
+	left_brackets := map[string]string {}
+	for key, val := range brackets_map {
+		left_brackets[val] = key
 	}
 
 	temp_stack := []string{}
@@ -56,24 +66,22 @@ func isValid(s string) bool {
 		temp_str := string(str)
 		stack_len := len(temp_stack)
 
-		if (stack_len > 0) && (brackets_map[temp_str] == temp_stack[stack_len - 1]) {
+		if _, ok := left_brackets[temp_str]; ok {
+			temp_stack = append(temp_stack, temp_str)
+		} else if (stack_len > 0) && (brackets_map[temp_str] == temp_stack[stack_len - 1]) {
 			temp_stack = temp_stack[:stack_len - 1]
-			continue
+		} else {
+			return false
 		}
 
-		temp_stack = append(temp_stack, temp_str)
 	}
 
-	if len(temp_stack) == 0{
-		return true
-	}
-
-	return false
+	return len(temp_stack) == 0
 }
 //leetcode submit region end(Prohibit modification and deletion)
 
 func main()  {
-	str := "()}"
+	str := "))))"
 	res := isValid(str)
 
 	fmt.Println(res)

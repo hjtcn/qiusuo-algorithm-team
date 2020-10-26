@@ -18,19 +18,25 @@
 
 #### The second week
 
-* First day: 
+* First day: [[155]最小栈](https://leetcode-cn.com/problems/min-stack/)
 
-* The next day: 
+* The next day: [[150]逆波兰表达式求值](https://leetcode-cn.com/problems/evaluate-reverse-polish-notation/)
 
-* Third day: 
+* Third day: [[844]比较含退格的字符串](https://leetcode-cn.com/problems/backspace-string-compare/)
 
-* Fourth day: 
+* Fourth day: [[316]去除重复字母](https://leetcode-cn.com/problems/remove-duplicate-letters/[[503]])
 
-* Fifth day: 
+* Fifth day: [[503]下一个更大元素II](https://leetcode-cn.com/problems/next-greater-element-ii/)
 
 * Sixth day: 复习本周题目
 
 * Seventh day: 周总结
+
+* 预习题目:[[232]用栈实现队列](https://leetcode-cn.com/problems/implement-queue-using-stacks/) 可选
+
+* 扩展题目:
+[[32]接雨水](https://leetcode-cn.com/problems/trapping-rain-water/) 可选
+[[84]柱状图最大的矩形](https://leetcode-cn.com/problems/largest-rectangle-in-histogram/) 可选
 
 #### The third week
 

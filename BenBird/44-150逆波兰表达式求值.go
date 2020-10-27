@@ -65,9 +65,11 @@ package main
 import (
 	"fmt"
 	"strconv"
+	"strings"
 )
 
 //leetcode submit region begin(Prohibit modification and deletion)
+//没有多余的判断，耗时较少，单不易维护
 func evalRPN(tokens []string) int {
 	temp_stack := []int{}
 
@@ -81,9 +83,38 @@ func evalRPN(tokens []string) int {
 		case "*":
 			temp_stack = append(temp_stack[:length - 2], temp_stack[length - 2] * temp_stack[length - 1])
 		case "/":
-			fmt.Println(val)
 			temp_stack = append(temp_stack[:length - 2], temp_stack[length - 2] / temp_stack[length - 1])
 		default:
+			num, _ := strconv.Atoi(val)
+			temp_stack = append(temp_stack, num)
+		}
+	}
+
+	return temp_stack[0]
+}
+
+//易维护，单运算耗时稍稍增加
+func evalRPNNew(tokens []string) int {
+	temp_stack := []int{}
+
+	for _, val := range tokens {
+		if len(val) > 0 && strings.ContainsAny(val, "+-*/") {
+			length := len(temp_stack)
+			elem_one := temp_stack[length - 1]
+			elem_two := temp_stack[length - 2]
+			temp_stack = temp_stack[:len(temp_stack) - 2]
+
+			switch val {
+			case "+":
+				temp_stack = append(temp_stack, elem_two + elem_one)
+			case "-":
+				temp_stack = append(temp_stack, elem_two - elem_one)
+			case "*":
+				temp_stack = append(temp_stack, elem_two * elem_one)
+			case "/":
+				temp_stack = append(temp_stack, elem_two / elem_one)
+			}
+		} else {
 			num, _ := strconv.Atoi(val)
 			temp_stack = append(temp_stack, num)
 		}
@@ -97,7 +128,6 @@ func evalRPN(tokens []string) int {
 测试代码
  */
 func main() {
-	fmt.Println()
 	str := []string{"4","13","5","/","+"}
 	res := evalRPN(str)
 

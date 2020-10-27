@@ -81,6 +81,7 @@
 |马勤尧|  mqycngods  |   lm    |  lm-js  |
 |王涛 |     Tacks9   |  tacks9 |   Tacks |
 |张鹏飞| zhangpengfeiup |  Paualf | Paualf |
+|张小富| aderx |  fu | xFu |
 
 > ## 刷题平台
 >

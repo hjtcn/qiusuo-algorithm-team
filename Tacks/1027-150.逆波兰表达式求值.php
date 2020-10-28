@@ -15,7 +15,7 @@ class Solution {
      */
     // 执行用时：16 ms, 在所有 PHP 提交中击败了93.10%的用户
     // 内存消耗：17.2 MB, 在所有 PHP 提交中击败了7.41%的用户
-    function evalRPN($tokens) {
+    function evalRPN1($tokens) {
         $stack = [];
         foreach($tokens as $token) {
             switch($token) {
@@ -39,6 +39,43 @@ class Solution {
         }
         return array_pop($stack);
     }
+
+    // 听了鹏飞之的意见，优化代码，调整后
+    // 执行用时：16 ms, 在所有 PHP 提交中击败了93.10%的用户
+    // 内存消耗：17 MB, 在所有 PHP 提交中击败了25.93%的用户
+    function evalRPN2($tokens) {
+        $stack = [];
+        foreach($tokens as $k=>$token) {
+            // 先判断是否是运算符
+            if($token == '+' || $token == '-' || $token == '*' || $token == '/' ) {
+                $b = array_pop($stack);
+                $a = array_pop($stack);
+                $res = 0;
+                switch($token) {
+                    case "+":
+                        $res = $b+$a;
+                        break;
+                    case "-":
+                        $res = -$b+$a;
+                        break;
+                    case "*":
+                        $res = $b*$a;
+                        break;
+                    case "/":
+                        $res = intval($a/$b);
+                        break;
+                    default:
+                    break;
+                }
+                array_push($stack, $res);
+
+            }else{
+            // 不是运算符直接压入栈中
+                array_push($stack, intval($token));
+            }
+        }
+        return array_pop($stack);
+    }
     
 }
 // @lc code=end
@@ -46,7 +83,7 @@ class Solution {
 $obj = new Solution();
 
 $tokens = ["2","1","+","3","*"];
-$res = $obj->evalRPN($tokens);
+$res = $obj->evalRPN2($tokens);
 var_dump($res);
 
 /*

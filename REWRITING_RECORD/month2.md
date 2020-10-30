@@ -40,15 +40,15 @@
 
 #### The third week
 
-* First day: 
+* First day: [[剑指Offer59]滑动窗口的最大值](https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/)
 
-* The next day: 
+* The next day: [[622]设计循环队列](https://leetcode-cn.com/problems/design-circular-queue/)
 
-* Third day: 
+* Third day: [[933]最近的请求次数](https://leetcode-cn.com/problems/number-of-recent-calls/)
 
-* Fourth day: 
+* Fourth day: [[641]设计双端循环队列](https://leetcode-cn.com/problems/design-circular-deque/)
 
-* Fifth day: 
+* Fifth day: [[面试题17.09]第k个数](https://leetcode-cn.com/problems/get-kth-magic-number-lcci/)
 
 * Sixth day: 复习本周题目
 

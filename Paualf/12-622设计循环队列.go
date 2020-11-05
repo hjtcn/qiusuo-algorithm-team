@@ -25,7 +25,7 @@ circularQueue.Rear();  // 返回 4
 
 设计循环队列：
 循环队列队空标记： rear== front
-循环队列队满标记： rear + 1 % size == front
+循环队列队满标记： (rear + 1 % size) == front
 循环队列长度：(rear- front  + size ) % size
 
 type MyCircularQueue struct {

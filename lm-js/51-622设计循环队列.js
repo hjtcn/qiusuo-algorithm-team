@@ -49,6 +49,8 @@
 var MyCircularQueue = function(k) {
     this.queue=[]
     this.len=k
+    this.head=-1
+    this.tail=-1
 };
 
 /**
@@ -58,11 +60,19 @@ var MyCircularQueue = function(k) {
  */
 //插入操作
 MyCircularQueue.prototype.enQueue = function(value) {
-    if(this.queue.length<this.len){
-        this.queue.push(value)
-        return true
+    //队列已满无法插入
+    if(this.isFull()){
+        return false
     }
-    return false
+    //队列为空，头指针为0
+    if(this.isEmpty()){
+        this.head=0
+    }
+    //尾指针后移，因为是循环队列，则+1对k求余
+    this.tail=(this.tail+1)%this.len
+    //队列赋值
+    this.queue[this.tail]=value
+    return true
 };
 
 /**
@@ -71,11 +81,19 @@ MyCircularQueue.prototype.enQueue = function(value) {
  */
 //从头部删除
 MyCircularQueue.prototype.deQueue = function() {
-    if(this.queue&&this.queue.length){
-        this.queue.shift()
-        return true
+    //队列为空无法删除
+    if(this.isEmpty()){
+        return false
     }
-    return false
+    //头尾指针相同，说明原队列只有一个元素，删除后，即队列为空，将头尾指针置为-1
+    if(this.head==this.tail){
+        this.head=this.tail=-1
+    }
+    else{
+    //从头部删除，头指针后移，循环队列，故头指针加一后对k求余
+        this.head=(this.head+1)%this.len
+    }
+    return true
 };
 
 /**
@@ -84,8 +102,8 @@ MyCircularQueue.prototype.deQueue = function() {
  */
 //获取队首
 MyCircularQueue.prototype.Front = function() {
-    //这里曾经踩过坑
-    return this.queue.length?this.queue[0]:-1
+    //队列不为空，返回头指针指向的元素
+    return this.isEmpty()?-1:this.queue[this.head]
 };
 
 /**
@@ -94,8 +112,8 @@ MyCircularQueue.prototype.Front = function() {
  */
 //获取队尾
 MyCircularQueue.prototype.Rear = function() {
-
-    return this.queue.length?this.queue[this.queue.length-1]:-1
+    //队列不为空，返回尾指针指向的元素
+    return this.isEmpty()?-1:this.queue[this.tail]
 };
 
 /**
@@ -104,7 +122,8 @@ MyCircularQueue.prototype.Rear = function() {
  */
 //队列是否为空
 MyCircularQueue.prototype.isEmpty = function() {
-    return !this.queue.length
+    //当从头部删除deQueue的时候，如果队列被清空，会将头指针置为-1。
+    return this.head==-1
 };
 
 /**
@@ -113,7 +132,8 @@ MyCircularQueue.prototype.isEmpty = function() {
  */
 //队列是否满了
 MyCircularQueue.prototype.isFull = function() {
-    return this.queue.length==this.len
+    //如果尾指针+1对长度求余追上头指针，则队列已满
+    return this.head==(this.tail+1)%this.len
 };
 
 /**
@@ -130,12 +150,12 @@ MyCircularQueue.prototype.isFull = function() {
 
 
 /** 题解
-    这种题，理解队列以及js的对象结构，一切还是比较清晰的。
-    但是过程中踩了一个小坑。比如返回队首，我一开始用的返回this.queue[0]||-1，
-    踩坑了如果this.queue[0]为0的情况。最后还是根据队列长度乖乖判断
+    第一次没看清题是用数组的api写的，后来看到不让用内置api的时候有点懵了，有点产生思维习惯了。
+    后来认真看了题解，借用头尾指针来获取队列的状态。注意循环队列，要对队列长度k求余
+    
     复杂度分析：
 	时间复杂度：O(1)
-
+    调用方法，处理头尾指针，并对数组进行赋值模拟队列操作
 	空间复杂度：O(N)
 	提前声明数组模拟队列的操作
  */

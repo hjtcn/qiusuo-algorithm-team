@@ -105,6 +105,13 @@ class Solution {
     // 执行用时：8 ms, 在所有 PHP 提交中击败了69.29%的用户
     // 内存消耗：15.3 MB, 在所有 PHP 提交中击败了5.12%的用户
     function isSameTree3($p, $q) {
+        // 两个队列同时为空，则两个二叉树相同
+        if($p == null && $q == null) {
+            return true;
+        }elseif($p == null || $q == null) {
+            return false;
+        }
+
         // 两个二叉树的根节点分别加入两个队列
         $arr_p = [$p];
         $arr_q = [$q];
@@ -112,30 +119,40 @@ class Solution {
             // 弹出队列
             $node_p = array_shift($arr_p);
             $node_q = array_shift($arr_q);
-            if($node_p == null || $node_q == null) {
-                if( $node_p != $node_q) {
-                    return false;
-                }
-            }
             // 如果两个节点的值不相同则两个二叉树一定不同
             if($node_p->val != $node_q->val) {
                 return false;
             }
-            if($node_p->left || $node_p->right) {
-                // 如果左右子节点都不为空，则先加入左子节点，后加入右子节点
-                array_push($arr_p, $node_p->left);// 压入队列
-                array_push($arr_p, $node_p->right);
+
+            // 如果只有一个节点的左子节点为空，或者只有一个节点的右子节点为空，则两个二叉树的结构不同，因此两个二叉树一定不同
+            // 左子树不一样，有一个为空
+            if ( ($node_p->left == null ) ^ ($node_q->left == null)) {
+                return false;
             }
-            if($node_q->left || $node_q->right) {
-                array_push($arr_q, $node_q->left);// 压入队列
+            // 右子树不一样，有一个为空
+            if ( ($node_p->right==null) ^ ($node_q->right== null) ) {
+                return false;
+            }
+           
+            // 如果两个节点的子节点的结构相同，则将两个节点的非空子节点分别加入两个队列
+            // 子节点加入队列时需要注意顺序，如果左右子节点都不为空，则先加入左子节点，后加入右子节点。
+            if($node_p->left) {
+                array_push($arr_p, $node_p->left);// 先加入左子节点
+            }
+            if($node_p->right) {
+                array_push($arr_p, $node_p->right);// 后加入右子节点
+            }
+            if($node_q->left) {
+                array_push($arr_q, $node_q->left);
+            }
+            if($node_q->right) {
                 array_push($arr_q, $node_q->right);
             }
+
         }
-        if( count($arr_p) == 0 && count($arr_q) == 0 ) {
-            return true;
-        }else{
-            return false;
-        }
+
+       return empty($arr_p) && empty($arr_q);
+ 
     }
 }
 // @lc code=end

@@ -48,11 +48,8 @@ function levelOrderBottom(root: TreeNode | null): number[][] {
 
     function getTreeValue (level: number, node: TreeNode | null){
         if(node !== null){
-            // 若数组的长度和遍历的层级相同，则表示当前层级的数组已经创建过了，就可以直接添加新数据
-            if(mapTree.length === level){
-                mapTree[0].push(node.val);
-            // 若数组的长度大于遍历的层级，则表示当前遍历到的层级已经在别的子树中创建过了，就需要倒序找到需要修改的位置
-            }else if(mapTree.length > level){
+            // 若数组的长度大于等于遍历的层级，则表示当前遍历到的层级已经在别的子树中创建过了，就需要倒序找到需要修改的位置
+            if(mapTree.length >= level){
                 mapTree[mapTree.length - level].push(node.val);
             // 若数组的长度小于遍历的层级，就表示当前遍历的层级下还没有创新新的数组，就需要创建一个新的数组
             }else{

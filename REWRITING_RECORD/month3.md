@@ -18,15 +18,15 @@
 
 #### The second week
 
-* First day: 
+* First day: [[剑指 Offer 54]二叉搜索树的第k大节点](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/)
 
-* The next day: 
+* The next day: [[530]二叉搜索树的最小绝对差](https://leetcode-cn.com/problems/minimum-absolute-difference-in-bst/)
 
-* Third day: 
+* Third day: [[剑指Offer27]二叉树的镜像](https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/)
 
-* Fourth day: 
+* Fourth day: [[剑指Offer34]二叉树中和为某一值的路径](https://leetcode-cn.com/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof/) 
 
-* Fifth day: 
+* Fifth day: [[面试题04.02]最小高度树](https://leetcode-cn.com/problems/minimum-height-tree-lcci/) 
 
 * Sixth day: 复习本周题目
 

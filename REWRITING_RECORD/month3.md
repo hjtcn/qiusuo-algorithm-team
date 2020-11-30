@@ -34,32 +34,35 @@
 
 #### The third week
 
-* First day: 
+##### [出题人]：Tacks（小涛）
+##### [题目类型]：树（简单基础为主）
 
-* The next day: 
+* Monday: [[108]将有序数组转换为二叉搜索树](https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree/)
 
-* Third day: 
+* Tuesday: [[145]二叉树的后序遍历](https://leetcode-cn.com/problems/binary-tree-postorder-traversal/) 
 
-* Fourth day: 
+* Wednesday: [[257]二叉树的所有路径](https://leetcode-cn.com/problems/binary-tree-paths/)
 
-* Fifth day: 
+* Thursday: [[404]左叶子之和](https://leetcode-cn.com/problems/sum-of-left-leaves/) 
 
-* Sixth day: 复习本周题目
+* Friday: [[617]合并二叉树](https://leetcode-cn.com/problems/merge-two-binary-trees/) 
 
-* Seventh day: 周总结
+* Saturday: 复习本周题目
+
+* Sunday: 周总结
 
 #### The fourth week
 
-* First day: 
+* Monday: 
 
-* The next day: 
+* Tuesday: 
 
-* Third day: 
+* Wednesday: 
 
-* Fourth day: 
+* Thursday: 
 
-* Fifth day: 
+* Friday: 
 
-* Sixth day: 复习本周题目
+* Saturday: 复习本周题目
 
-* Seventh day: 周总结
+* Sunday: 周总结

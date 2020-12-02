@@ -56,7 +56,6 @@ function kthLargest(root: TreeNode | null, k: number): number {
 
     function mapTree (node: TreeNode | null){
         if(node !== null){
-            const firstNum = numList[0];
             numList.push(node.val)
             mapTree(node.left);
             mapTree(node.right);

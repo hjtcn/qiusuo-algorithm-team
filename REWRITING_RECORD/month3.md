@@ -53,15 +53,15 @@
 
 #### The fourth week
 
-* Monday: 
+* Monday:[[112]路径总和](https://leetcode-cn.com/problems/path-sum/)
 
-* Tuesday: 
+* Tuesday:[[235]二叉搜索树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
 
-* Wednesday: 
+* Wednesday:[[22]括号生成](https://leetcode-cn.com/problems/generate-parentheses/)
 
-* Thursday: 
+* Thursday:[[70]爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)
 
-* Friday: 
+* Friday:[[46]全排列](https://leetcode-cn.com/problems/permutations/)
 
 * Saturday: 复习本周题目
 

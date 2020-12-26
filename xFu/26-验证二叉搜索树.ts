@@ -42,9 +42,10 @@
 
 function isValidBST(root: TreeNode | null, min = -Infinity, max = Infinity): boolean {
     if(root !== null){
-        
+        // 左子树的任一个结点都必须小于当前结点的值，右子树的任一结点都必须大于当前结点的值
         if(root.val <= min || root.val >= max) return false;
 
+        // 递归判断，必须左右子树都满足条件才行
         return isValidBST(root.left, min, root.val) && isValidBST(root.right, root.val, max);
     }
     return true;

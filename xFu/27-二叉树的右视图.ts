@@ -31,17 +31,19 @@
 function rightSideView(root: TreeNode | null): number[] {
     let mapArray = [];
     let queue = [];
-    let nextNodeNum = 1;
 
     if(!root) return [];
 
     queue.push(root);
 
     while(queue.length){
+        // 某一次遍历开始时，表示当成层的数据个数
         let len = queue.length;
         while(len){
             const shiftQueue = queue.shift();
+            // 当队列中只剩下一个数的时候（就是刚取出的数），就取这个值
             if(len === 1) mapArray.push(shiftQueue.val);
+            // 遍历取到的数，将他们的左右存在的子节点添加到队列中
             shiftQueue.left && queue.push(shiftQueue.left);
             shiftQueue.right && queue.push(shiftQueue.right);
             len--;

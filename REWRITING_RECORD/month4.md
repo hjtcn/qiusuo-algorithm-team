@@ -34,15 +34,15 @@
 
 #### The third week
 
-* First day: 
+* First day: [[面试题16.19]水域大小](https://leetcode-cn.com/problems/pond-sizes-lcci/)
 
-* The next day: 
+* The next day: [[547]朋友圈](https://leetcode-cn.com/problems/friend-circles/)
 
-* Third day: 
+* Third day: [[394]字符串解码](https://leetcode-cn.com/problems/decode-string/)
 
-* Fourth day: 
+* Fourth day: [[剑指Offer34]二叉树中和为某一值的路径](https://leetcode-cn.com/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof/)
 
-* Fifth day: 
+* Fifth day: [[695]岛屿的最大面积](https://leetcode-cn.com/problems/max-area-of-island/)
 
 * Sixth day: 复习本周题目
 

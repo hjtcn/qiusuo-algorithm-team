@@ -50,15 +50,15 @@
 
 #### The fourth week
 
-* First day: 
+* First day: [[589]N叉树的前序遍历](https://leetcode-cn.com/problems/n-ary-tree-preorder-traversal/)
 
-* The next day: 
+* The next day: [[690]员工的重要性](https://leetcode-cn.com/problems/employee-importance/)
 
-* Third day: 
+* Third day: [[剑指offer55-II]平衡二叉树](https://leetcode-cn.com/problems/ping-heng-er-cha-shu-lcof/)
 
-* Fourth day: 
+* Fourth day: [[529]扫雷游戏](https://leetcode-cn.com/problems/minesweeper/)
 
-* Fifth day: 
+* Fifth day: [[剑指Offer68-I]二叉搜索树的最近公共祖先](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-zui-jin-gong-gong-zu-xian-lcof/)
 
 * Sixth day: 复习本周题目
 

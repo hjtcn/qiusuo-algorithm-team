@@ -3,7 +3,7 @@
  * @Descripttion: 2021第一个工作日 冲冲冲啊 
  * @Author: tacks321@qq.com
  * @Date: 2021-01-04 16:27:21
- * @LastEditTime: 2021-01-04 19:44:12
+ * @LastEditTime: 2021-01-05 13:53:35
  */
 
 /*
@@ -55,9 +55,9 @@ class Solution1 {
     // 递归思想
     function preorder($root) {
         $result = [];
-        if($root == null) {
-            return $result;
-        }
+        // if($root == null) {
+        //     return $result;
+        // }
         $this->_helper($root, $result);
 
         return $result;

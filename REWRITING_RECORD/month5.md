@@ -16,17 +16,17 @@
 
 * Seventh day: 周总结
 
-#### The second week
+#### The second week   ---回顾周
 
-* First day: 
+* First day: [[110]平衡二叉树](https://leetcode-cn.com/problems/balanced-binary-tree/) -> Month-3, Week-1
 
-* The next day: 
+* The next day: [[101]对称二叉树](https://leetcode-cn.com/problems/symmetric-tree/) -> Month-2, Week-4
 
-* Third day: 
+* Third day: [[面试题04.02]最小高度树](https://leetcode-cn.com/problems/minimum-height-tree-lcci/)  -> Month-3, Week-2
 
-* Fourth day: 
+* Fourth day: [[面试题04.03]特定深度节点链表](https://leetcode-cn.com/problems/list-of-depth-lcci/) -> Month-3, Week-1
 
-* Fifth day: 
+* Fifth day: [[剑指Offer34]二叉树中和为某一值的路径](https://leetcode-cn.com/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof/)  -> Month-3, Week-2
 
 * Sixth day: 复习本周题目
 

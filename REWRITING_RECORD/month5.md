@@ -34,15 +34,15 @@
 
 #### The third week
 
-* First day: 
+* First day: [[938]二叉搜索树的范围和](https://leetcode-cn.com/problems/range-sum-of-bst/)
 
-* The next day:
+* The next day:[[897]递增顺序查找树](https://leetcode-cn.com/problems/increasing-order-search-tree/)
 
-* Third day: 
+* Third day: [[面试题 08.06]汉诺塔问题](https://leetcode-cn.com/problems/hanota-lcci/)
 
-* Fourth day: 
+* Fourth day: [[865]具有所有最深节点的最小子树](https://leetcode-cn.com/problems/smallest-subtree-with-all-the-deepest-nodes/)
 
-* Fifth day: 
+* Fifth day: [[24]两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/)
 
 * Sixth day: 复习本周题目
 

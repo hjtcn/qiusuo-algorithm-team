@@ -50,15 +50,15 @@
 
 #### The fourth week
 
-* First day: 
+* First day: [[1137]第N个泰波那契数](https://leetcode-cn.com/problems/n-th-tribonacci-number/)
 
-* The next day: 
+* The next day: [[783]二叉搜索树节点最小距离](https://leetcode-cn.com/problems/minimum-distance-between-bst-nodes/)
 
-* Third day: 
+* Third day: [[21]合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/)
 
-* Fourth day: 
+* Fourth day: [[98]验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/)
 
-* Fifth day:
+* Fifth day: [[92]反转链表II](https://leetcode-cn.com/problems/reverse-linked-list-ii/)
 
 * Sixth day: 复习本周题目
 

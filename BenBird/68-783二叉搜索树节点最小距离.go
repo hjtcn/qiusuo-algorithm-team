@@ -117,7 +117,7 @@ func minDiffDfs(root *TreeNode) {
 接着就进行依次遍历，进行两两相减，之差和最小值进行比较，获取最小值
 
 复杂度分析：
-	时间复杂度：O(nlogn)
+	时间复杂度：O(n + nlogn)	递归+排序
 	空间复杂度：O(n)
 
 */

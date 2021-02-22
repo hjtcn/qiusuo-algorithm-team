@@ -2,7 +2,7 @@
 
 #### The first week   
 
-* First day: [剑指Offer34]二叉树中和为某一值的路径](https://leetcode-cn.com/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof/) 
+* First day: [[剑指Offer34]二叉树中和为某一值的路径](https://leetcode-cn.com/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof/) 
 
 * The next day:[[529]扫雷游戏](https://leetcode-cn.com/problems/minesweeper/)
 

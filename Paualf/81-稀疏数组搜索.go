@@ -68,6 +68,7 @@ func findString(words []string, s string) int {
 
 3. 看题解：
 看完题解以后，发现自己并没有看清楚题意，自己只是觉得是排序好的字符串，没有看到其中散布着一些空字符串，自己没有去处理这些空字符串的情况（审题不清，昨天开会还刚说过这个问题，自己就犯了，哈哈哈）
+
 思路：判断mid是否为空字符串，如果是空字符串则一直向右寻找，找到不为空的进行比较，如果找到最右边发现最右边还是为空，则将 right 改为 mid -1 继续进行搜索, 将right改为原有 mid -1 这个细节，自己一开始向将原有mid记录一下，觉得还是有点麻烦的，后来看到题解里面写到了如果需要用到这个变量就重新计算一下  mid := (left + right) / 2 - 1, 我们在这个过程中只是移动了 mid 的值，这个时候 left 和 right 都没有变化的，所以可以这样求解的
 
 func findString(words []string, s string) int {
@@ -122,7 +123,7 @@ func findString(words []string,s string) int {
     return -1
 }
 
-迭代：
+递归：
 func findString(words []string,s string) int {
     var f func(int,int) int
     f = func(l,r int) int {

@@ -19,15 +19,17 @@
 
 #### The second week
 
-* First day: 
+> `Tacks` 小涛出题 [二分查找]
 
-* The next day: 
+* First day: `简单`[[面试题 10.05]稀疏数组搜索](https://leetcode-cn.com/problems/sparse-array-search-lcci/)
 
-* Third day: 
+* Second day: `中等`[[287]寻找重复数](https://leetcode-cn.com/problems/find-the-duplicate-number/)
 
-* Fourth day: 
+* Third day: `简单`[[剑指 Offer 11]旋转数组的最小数字](https://leetcode-cn.com/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/)
 
-* Fifth day: 
+* Fourth day: `中等`[[1337]矩阵中战斗力最弱的 K 行](https://leetcode-cn.com/problems/the-k-weakest-rows-in-a-matrix/)
+
+* Fifth day: `简单`[[704]二分查找](https://leetcode-cn.com/problems/binary-search/)
 
 * Sixth day: 复习本周题目
 

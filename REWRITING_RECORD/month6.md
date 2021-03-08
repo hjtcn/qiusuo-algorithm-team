@@ -37,15 +37,15 @@
 
 #### The third week
 
-* First day: 
+* First day:`简单`[[69]x的平方根](https://leetcode-cn.com/problems/sqrtx/)
 
-* The next day:
+* The next day:`中等`[[34]在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
 
-* Third day: 
+* Third day:`中等`[[162]寻找峰值](https://leetcode-cn.com/problems/find-peak-element/)
 
-* Fourth day: 
+* Fourth day:`简单`[[278]第一个错误的版本](https://leetcode-cn.com/problems/first-bad-version/)
 
-* Fifth day: 
+* Fifth day:`中等`[[74]搜索二维矩阵](https://leetcode-cn.com/problems/search-a-2d-matrix/)
 
 * Sixth day: 复习本周题目
 

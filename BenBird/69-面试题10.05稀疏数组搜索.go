@@ -111,6 +111,14 @@ func findRecursion(words []string, s string, low int, high int) int {
 	}
 }
 
+/**
+递归：思路和非递归思路类似，先处理空字符串，然后判断做递归调用，更新high和low的值
+复杂度分析：
+	时间复杂度：O(logN)
+	空间复杂度：O(logN)
+
+ */
+
 func main()  {
 	str := []string{"at", "", "", "", "ball", "", "", "car", "", "", "dad", "", ""}
 	//fmt.Println(findString(str, "ball"))

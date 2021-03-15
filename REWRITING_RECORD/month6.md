@@ -53,15 +53,15 @@
 
 #### The fourth week
 
-* First day: 
+* First day: `简单`[[125]. 验证回文串](https://leetcode-cn.com/problems/valid-palindrome/)
 
-* The next day: 
+* The next day: `简单`[[557]. 反转字符串中的单词 III](https://leetcode-cn.com/problems/reverse-words-in-a-string-iii/)
 
-* Third day: 
+* Third day: `简单`[[696]. 计数二进制子串](https://leetcode-cn.com/problems/count-binary-substrings/)
 
-* Fourth day: 
+* Fourth day: `简单`[[面试题 01.02]. 判定是否互为字符重排](https://leetcode-cn.com/problems/check-permutation-lcci/)
 
-* Fifth day:
+* Fifth day: `中等`[[3]. 无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)
 
 * Sixth day: 复习本周题目
 

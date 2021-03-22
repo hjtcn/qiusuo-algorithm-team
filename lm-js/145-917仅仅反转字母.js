@@ -80,11 +80,11 @@
 /*
     查看题解，有很多都是把数组筛选字母复制一遍，然后再pop
     再在遍历的时候，将把字母替换为pop出的元素。
+    不过这些大部分空间复杂度都为O(N)，所以就找了比较简单的一种写法。
     例如：
     var reverseOnlyLetters = function(S) {
         let arr=S.match(/[a-zA-Z]/g)
         //还学到了replace中遍历pop()
         return S.replace(/[a-zA-Z]/g,()=>arr.pop())
     }
-
 */

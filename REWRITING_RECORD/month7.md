@@ -18,15 +18,15 @@
 
 #### The second week
 
-* First day: 
+* First day: `简单` [[55]最大子序和](https://leetcode-cn.com/problems/maximum-subarray/) 
 
-* Second day: 
+* Second day: `简单` [[面试题17.16]按摩师](https://leetcode-cn.com/problems/the-masseuse-lcci/) 
 
-* Third day: 
+* Third day: `简单` [[1025]除数博弈](https://leetcode-cn.com/problems/divisor-game/) 
 
-* Fourth day: 
+* Fourth day: `简单` [[70]爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/) 
 
-* Fifth day: 
+* Fifth day: `简单` [[面试题08.01]三步问题](https://leetcode-cn.com/problems/three-steps-problem-lcci/) 
 
 * Sixth day: 复习本周题目
 

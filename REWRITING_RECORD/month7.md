@@ -36,13 +36,13 @@
 
 * First day:
 
-* The next day:
+* Second day: `简单` [[剑指Offer42]连续子数组的最大和](https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/)
 
-* Third day:
+* Third day: `简单` [[303]区域和检索 - 数组不可变](https://leetcode-cn.com/problems/range-sum-query-immutable/) 
 
-* Fourth day:
+* Fourth day: `简单` [[746]使用最小花费爬楼梯](https://leetcode-cn.com/problems/min-cost-climbing-stairs/) 
 
-* Fifth day:
+* Fifth day:`简单` [[392]判断子序列](https://leetcode-cn.com/problems/is-subsequence/) 
 
 * Sixth day: 复习本周题目
 

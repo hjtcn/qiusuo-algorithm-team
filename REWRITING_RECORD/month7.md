@@ -50,15 +50,15 @@
 
 #### The fourth week
 
-* First day: 
+* First day:`中等` [[62]不同路径](https://leetcode-cn.com/problems/unique-paths/)
 
-* The next day: 
+* Second day: `中等` [[64]最小路径和](https://leetcode-cn.com/problems/minimum-path-sum/)
 
-* Third day: 
+* Third day: `中等` [[647]回文子串](https://leetcode-cn.com/problems/palindromic-substrings/)
 
-* Fourth day: 
+* Fourth day: `中等` [[1143]最长公共子序列](https://leetcode-cn.com/problems/longest-common-subsequence/)
 
-* Fifth day: 
+* Fifth day:`困难` [[72]编辑距离](https://leetcode-cn.com/problems/edit-distance/)
 
 * Sixth day: 复习本周题目
 

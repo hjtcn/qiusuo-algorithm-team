@@ -87,5 +87,9 @@ func main() {
 	即f[0][j] = 1 f[i][0] = 1
 	因为f[0][0]为出发点，所以 f[0][0] = 1
 	所以 可根据f[i][j] = f[i][j-1] + f[i-1][j] 得出到达finish的所有路径和
+
+复杂度分析：
+	时间复杂度：O(m*n)
+	空间复杂度：O(m*n)
 */
 //leetcode submit region end(Prohibit modification and deletion)

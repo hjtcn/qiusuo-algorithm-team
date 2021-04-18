@@ -4,7 +4,7 @@
 
 * First day: [[题号]题目名称](题目链接)
 
-* The next day:
+* Second day:
 
 * Third day: 
 
@@ -20,7 +20,7 @@
 
 * First day: 
 
-* The next day: 
+* Second day: 
 
 * Third day: 
 
@@ -36,7 +36,7 @@
 
 * First day: 
 
-* The next day:
+* Second day:
 
 * Third day: 
 
@@ -52,7 +52,7 @@
 
 * First day: 
 
-* The next day: 
+* Second day: 
 
 * Third day: 
 

@@ -22,15 +22,15 @@
 
 #### The second week
 
-* First day: 
+* First day: [[1716]计算力扣银行的钱](https://leetcode-cn.com/problems/calculate-money-in-leetcode-bank/)
 
-* Second day: 
+* Second day: [[944]删列造序](https://leetcode-cn.com/problems/delete-columns-to-make-sorted/)
 
-* Third day: 
+* Third day: [[1518]换酒问题](https://leetcode-cn.com/problems/water-bottles/)
 
-* Fourth day: 
+* Fourth day: [[1403]非递增顺序的最小子序列](https://leetcode-cn.com/problems/minimum-subsequence-in-non-increasing-order/)
 
-* Fifth day: 
+* Fifth day: [[1217]玩筹码](https://leetcode-cn.com/problems/minimum-cost-to-move-chips-to-the-same-position/)
 
 * Sixth day: 复习本周题目
 

@@ -38,15 +38,15 @@
 
 #### The third week
 
-* First day: 
+* First day: [[122]买卖股票的最佳时机II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/)
 
-* Second day:
+* Second day:[[55]跳跃游戏](https://leetcode-cn.com/problems/jump-game/)
 
-* Third day: 
+* Third day: [[45]跳跃游戏II](https://leetcode-cn.com/problems/jump-game-ii/)
 
-* Fourth day: 
+* Fourth day: [[134]加油站](https://leetcode-cn.com/problems/gas-station/)
 
-* Fifth day: 
+* Fifth day: [[455]分发饼干](https://leetcode-cn.com/problems/assign-cookies/)
 
 * Sixth day: 复习本周题目
 

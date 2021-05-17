@@ -54,15 +54,18 @@
 
 #### The fourth week
 
-* First day: 
+- 出题人（小涛 `Tacks`） 
+- 类型 `背包问题`
 
-* Second day: 
+* First day: [[474]一和零](https://leetcode-cn.com/problems/ones-and-zeroes/)
 
-* Third day: 
+* Second day: [[494]目标和](https://leetcode.com/problems/target-sum/)
 
-* Fourth day: 
+* Third day: [[416]分割等和子集](https://leetcode-cn.com/problems/partition-equal-subset-sum/)
 
-* Fifth day:
+* Fourth day: [[322]零钱兑换](https://leetcode-cn.com/problems/coin-change/)
+
+* Fifth day:  [[518]零钱兑换 II](https://leetcode-cn.com/problems/coin-change-2/)
 
 * Sixth day: 复习本周题目
 

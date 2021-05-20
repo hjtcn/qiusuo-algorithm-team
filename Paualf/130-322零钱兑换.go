@@ -90,10 +90,14 @@ func helper(coins []int, amount int, dp []int) int {
     dp[amount] = res
     return res
 }
+
 4. 复杂度分析：
 时间复杂度：O(Sn) : S是金额，n是面额数，需要计算O(S)个状态，S为题目给的总金额，每次需要枚举n个面额来转移状态
 空间复杂度：O(n)
+
 5. 总结：
- 5.1: 分解子问题的能力需要培养
+5.1: 分解子问题的能力需要培养
+
 5.2: 从后往前分析问题
+
 5.3: take it easy

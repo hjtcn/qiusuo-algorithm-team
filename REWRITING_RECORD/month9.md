@@ -17,15 +17,15 @@
 
 #### The second week
 
-* First day: 
+* First day: [[面试题 17.12]BiNode](https://leetcode-cn.com/problems/binode-lcci/)
 
-* Second day: 
+* Second day: [[面试题 08.05] 递归乘法](https://leetcode-cn.com/problems/recursive-mulitply-lcci/)
 
-* Third day: 
+* Third day: [[538]把二叉搜索树转换为累加树](https://leetcode-cn.com/problems/convert-bst-to-greater-tree/)
 
-* Fourth day: 
+* Fourth day: [[17]电话号码的字母组合](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/)
 
-* Fifth day: 
+* Fifth day: [[69]修剪二叉搜索树](https://leetcode-cn.com/problems/trim-a-binary-search-tree/)
 
 * Sixth day: 复习本周题目
 

@@ -33,15 +33,15 @@
 
 #### The third week
 
-* First day: 
+* First day: [[306]累加数](https://leetcode-cn.com/problems/additive-number/)
 
-* Second day:
+* Second day:[[78]子集](https://leetcode-cn.com/problems/subsets/)
 
-* Third day: 
+* Third day: [[90]子集II](https://leetcode-cn.com/problems/subsets-ii/)
 
-* Fourth day: 
+* Fourth day: [[39]组合总和](https://leetcode-cn.com/problems/combination-sum/)
 
-* Fifth day: 
+* Fifth day: [[40]组合总和II](https://leetcode-cn.com/problems/combination-sum-ii/)
 
 * Sixth day: 复习本周题目
 

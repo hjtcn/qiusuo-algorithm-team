@@ -49,15 +49,19 @@
 
 #### The fourth week
 
-* First day: 
 
-* Second day: 
+- 出题人（小涛 `Tacks`） 
+- 类型 `DFS深度优先搜索/BFS广度优先搜索`
 
-* Third day: 
+* First day: 端午节 20210614 休息一天
 
-* Fourth day: 
+* Second day:  `二叉树的DFS/BFS` [111. 二叉树的最小深度](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/)
 
-* Fifth day:
+* Third day:  `网格类的DFS/BFS` [200. 岛屿数量](https://leetcode-cn.com/problems/number-of-islands/)
+
+* Fourth day: `DFS中的回溯剪枝` [47. 全排列 II](https://leetcode-cn.com/problems/permutations-ii/) （3-4-5 同系列题）
+
+* Fifth day: `有向图的拓扑排序` [210. 课程表 II](https://leetcode-cn.com/problems/course-schedule-ii/) （5-1-5 同系列题）
 
 * Sixth day: 复习本周题目
 

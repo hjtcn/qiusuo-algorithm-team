@@ -18,15 +18,15 @@
 
 #### The second week
 
-* First day: 
+* First day: `二分法` [[69]x 的平方根](https://leetcode-cn.com/problems/sqrtx/)
 
-* Second day: 
+* Second day: `二分法` [[面试题 10.05] 稀疏数组搜索](https://leetcode-cn.com/problems/sparse-array-search-lcci/)
 
-* Third day: 
+* Third day: `动规基础题` [[343]整数拆分](https://leetcode-cn.com/problems/integer-break/)
 
-* Fourth day: 
+* Fourth day: `动规基础题` [[96]不同的二叉搜索树](https://leetcode-cn.com/problems/unique-binary-search-trees/)
 
-* Fifth day: 
+* Fifth day: `动规基础题` [[120]三角形最小路径和](https://leetcode-cn.com/problems/triangle/)
 
 * Sixth day: 复习本周题目
 

@@ -34,15 +34,15 @@
 
 #### The third week
 
-* First day: 
+* First day: `01背包` [[494]目标和](https://leetcode.com/problems/target-sum/)
 
-* Second day:
+* Second day: `01背包` [[474]一和零](https://leetcode-cn.com/problems/ones-and-zeroes/)
 
-* Third day: 
+* Third day: `01背包` [[1049]最后一块石头的重量 II](https://leetcode-cn.com/problems/last-stone-weight-ii/)
 
-* Fourth day: 
+* Fourth day: `01背包`  [[416]分割等和子集](https://leetcode-cn.com/problems/partition-equal-subset-sum/)
 
-* Fifth day: 
+* Fifth day: `二分法`[[162]寻找峰值](https://leetcode-cn.com/problems/find-peak-element/)
 
 * Sixth day: 复习本周题目
 

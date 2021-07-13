@@ -50,15 +50,15 @@
 
 #### The fourth week
 
-* First day: 
+* First day: `完全背包` [[518]零钱兑换II](https://leetcode-cn.com/problems/coin-change-2/)
 
-* Second day: 
+* Second day: `完全背包` [[377]组合综合IV](https://leetcode-cn.com/problems/combination-sum-iv/)
 
-* Third day: 
+* Third day: `完全背包` [[322]零钱兑换](https://leetcode-cn.com/problems/coin-change/)
 
-* Fourth day: 
+* Fourth day: `完全背包` [[279]完全平方数](https://leetcode-cn.com/problems/perfect-squares/)
 
-* Fifth day:
+* Fifth day:  `完全背包` [ [139]单词拆分](https://leetcode-cn.com/problems/word-break/)
 
 * Sixth day: 复习本周题目
 

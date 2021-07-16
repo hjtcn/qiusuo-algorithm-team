@@ -10,7 +10,7 @@
 
 * Fourth day: `股票问题` [[188]买卖股票的最佳时机IV](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iv/)
 
-* Fifth day:  `股票问题` [ [309]最佳买卖股票时机含冷冻期](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)
+* Fifth day:  `股票问题` [[309]最佳买卖股票时机含冷冻期](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)
 
 * Sixth day: 复习本周题目
 

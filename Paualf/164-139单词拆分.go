@@ -64,3 +64,5 @@ func wordBreak(s string,wordDict []string)bool {
 
 4. 总结：
 4.1: 理解题意还是蛮重要的，你以为的不一定是对的，要去分析
+
+4.2: 里面的 for j := 0;j < i;j++ ,j < i这个还是值得学习和思考的，这个地方也是我不会的地方

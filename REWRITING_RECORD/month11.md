@@ -18,15 +18,15 @@
 
 #### The second week
 
-* First day: 
+* First day: `子序列（不连续）` [[1143]最长公共子序列](https://leetcode-cn.com/problems/longest-common-subsequence/)
 
-* Second day: 
+* Second day: `子序列（连续）`[[674]最长连续递增序列](https://leetcode-cn.com/problems/longest-continuous-increasing-subsequence/)
 
-* Third day: 
+* Third day: `子序列（连续）`[[718]最长重复子数组](https://leetcode-cn.com/problems/maximum-length-of-repeated-subarray/)
 
-* Fourth day: 
+* Fourth day: `子序列（连续）`[[53]最大子序和](https://leetcode-cn.com/problems/maximum-subarray/)
 
-* Fifth day: 
+* Fifth day: `子序列（不连续）` [[1035]不相交的线](https://leetcode-cn.com/problems/uncrossed-lines/)
 
 * Sixth day: 复习本周题目
 

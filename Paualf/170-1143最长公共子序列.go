@@ -20,7 +20,7 @@
 1 <= text1.length, text2.length <= 1000
 text1 和 text2 仅由小写英文字符组成。
 
-    1. Clarfication:
+    1. Clarification:
          a b c d e
        0 0 0 0 0 0           
      a 0 1 1 1 1 1 

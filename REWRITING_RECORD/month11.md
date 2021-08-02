@@ -34,15 +34,15 @@
 
 #### The third week
 
-* First day: 
+* First day: `编辑距离` [[583]两个字符串的删除操作](https://leetcode-cn.com/problems/delete-operation-for-two-strings/)
 
-* Second day:
+* Second day: `编辑距离` [[72]编辑距离](https://leetcode-cn.com/problems/edit-distance/)
 
-* Third day: 
+* Third day: `子序列` [[115]不同的子序列](https://leetcode-cn.com/problems/distinct-subsequences/)
 
-* Fourth day: 
+* Fourth day: `回文` [[647]回文子串](https://leetcode-cn.com/problems/palindromic-substrings/)
 
-* Fifth day: 
+* Fifth day: `回文` [[516]最长回文子序列](https://leetcode-cn.com/problems/longest-palindromic-subsequence/) 
 
 * Sixth day: 复习本周题目
 

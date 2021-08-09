@@ -43,6 +43,8 @@ import (
 	"strconv"
 )
 
+/***
+
 //leetcode submit region begin(Prohibit modification and deletion)
 type MyLinkedList struct {
 	Val int
@@ -50,7 +52,7 @@ type MyLinkedList struct {
 }
 
 
-/** Initialize your data structure here. */
+//Initialize your data structure here.
 func Constructor() MyLinkedList {
 	//arr := []int{3, 4, 6, 8, 9, 22}
 	arr := []int{1}
@@ -71,7 +73,7 @@ func Constructor() MyLinkedList {
 }
 
 
-/** Get the value of the index-th node in the linked list. If the index is invalid, return -1. */
+// Get the value of the index-th node in the linked list. If the index is invalid, return -1.
 func (this *MyLinkedList) Get(index int) int {
 	if index < 0 {
 		return -1
@@ -93,7 +95,7 @@ func (this *MyLinkedList) Get(index int) int {
 }
 
 
-/** Add a node of value val before the first element of the linked list. After the insertion, the new node will be the first node of the linked list. */
+// Add a node of value val before the first element of the linked list. After the insertion, the new node will be the first node of the linked list.
 func (this *MyLinkedList) AddAtHead(val int)  {
 	temp_list := this
 	node := &MyLinkedList{val, nil}
@@ -101,7 +103,7 @@ func (this *MyLinkedList) AddAtHead(val int)  {
 }
 
 
-/** Append a node of value val to the last element of the linked list. */
+// Append a node of value val to the last element of the linked list.
 func (this *MyLinkedList) AddAtTail(val int)  {
 	node := &MyLinkedList{val, nil}
 	temp_list := this
@@ -109,7 +111,7 @@ func (this *MyLinkedList) AddAtTail(val int)  {
 }
 
 
-/** Add a node of value val before the index-th node in the linked list. If index equals to the length of linked list, the node will be appended to the end of linked list. If index is greater than the length, the node will not be inserted. */
+// Add a node of value val before the index-th node in the linked list. If index equals to the length of linked list, the node will be appended to the end of linked list. If index is greater than the length, the node will not be inserted.
 func (this *MyLinkedList) AddAtIndex(index int, val int)  {
 	temp := this
 
@@ -135,7 +137,7 @@ func (this *MyLinkedList) AddAtIndex(index int, val int)  {
 }
 
 
-/** Delete the index-th node in the linked list, if the index is valid. */
+// Delete the index-th node in the linked list, if the index is valid.
 func (this *MyLinkedList) DeleteAtIndex(index int)  {
 	temp := this
 
@@ -156,12 +158,105 @@ func (this *MyLinkedList) DeleteAtIndex(index int)  {
 	}
 }
 
+上面是自己写的代码，没有使用头节点，删除处理的还是挺麻烦的，
+没有处理好
+AddAtHead 添加节点不成功
+DeleteAtIndex 删除节点未成功
+
+上面这种写法，细节处理的挺费脑子的，稍不注意，bug一堆
+
+****/
+
+type ListNode struct {
+	Val int
+	Next *ListNode
+}
+
+type MyLinkedList struct {
+	length int
+	head *ListNode
+}
+
+
+//Initialize your data structure here.
+func Constructor() MyLinkedList {
+	return MyLinkedList{
+		0,
+		&ListNode{},
+	}
+}
+
+
+// Get the value of the index-th node in the linked list. If the index is invalid, return -1.
+func (this *MyLinkedList) Get(index int) int {
+	if index < 0 || index >= this.length {
+		return -1
+	}
+
+	temp := this.head
+
+	for i := 0; i <= index; i++ {
+		temp = temp.Next
+	}
+
+	return temp.Val
+}
+
+
+// Add a node of value val before the first element of the linked list. After the insertion, the new node will be the first node of the linked list.
+func (this *MyLinkedList) AddAtHead(val int)  {
+	this.AddAtIndex(0, val)
+}
+
+
+// Append a node of value val to the last element of the linked list.
+func (this *MyLinkedList) AddAtTail(val int)  {
+	this.AddAtIndex(this.length, val)
+}
+
+
+// Add a node of value val before the index-th node in the linked list. If index equals to the length of linked list, the node will be appended to the end of linked list. If index is greater than the length, the node will not be inserted.
+func (this *MyLinkedList) AddAtIndex(index int, val int)  {
+	if index < 0 || index > this.length {
+		return
+	}
+
+	temp := this.head
+	for i := 0; i < index; i++ {
+		temp = temp.Next
+	}
+
+	node := &ListNode{val, nil}
+	node.Next = temp.Next
+	temp.Next = node
+
+	this.length++
+}
+
+
+// Delete the index-th node in the linked list, if the index is valid.
+func (this *MyLinkedList) DeleteAtIndex(index int)  {
+	if index < 0 || index >= this.length {
+		return
+	}
+
+	temp := this.head
+
+	for i := 0; i < index; i++ {
+		temp = temp.Next
+	}
+
+	temp.Next = temp.Next.Next
+	this.length--
+}
+
 func (this *MyLinkedList) dy()  {
+	temp := this.head
 	str := ""
-	for this != nil {
-		temp_num := this.Val
+	for temp != nil {
+		temp_num := temp.Val
 		str = str + strconv.Itoa(temp_num) + "->"
-		this = this.Next
+		temp = temp.Next
 	}
 	fmt.Println(str)
 }
@@ -185,7 +280,8 @@ func main()  {
 	new_obj.dy()
 	//1->2->3 nil
 
-	new_obj.Get(1)
+	num := new_obj.Get(1)
+	fmt.Println(num)
 	new_obj.dy()
 	//1->2->3 2
 
@@ -193,10 +289,19 @@ func main()  {
 	new_obj.dy()
 	//1->3 nil
 
-	new_obj.Get(1)
+	num = new_obj.Get(1)
+	fmt.Println(num)
 	new_obj.dy()
 	//1->3 3
 }
+
+/**
+参考了别人的代码，发现使用头节点，处理链表省事多了
+并分别构建节点和链表的结构体
+
+链表结构体的属性增加链表长度，这样判断操作链表的index是否有效，就不用遍历链表
+链表处理细节还是挺重要的
+ */
 
 
 /**

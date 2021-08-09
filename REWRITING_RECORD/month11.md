@@ -50,15 +50,18 @@
 
 #### The fourth week
 
-* First day: 
+- 出题人（小涛 `Tacks`） 
+- 类型 `链表`
 
-* Second day: 
+* First day: `链表的实现-单链表、双链表` [[707]设计链表](https://leetcode-cn.com/problems/design-linked-list/)
 
-* Third day: 
+* Second day: `链表的操作-删除节点`      [[19]删除链表的倒数第 N 个结点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/)
 
-* Fourth day: 
+* Third day: `链表的判断-环状`           [[142]环形链表 II](https://leetcode-cn.com/problems/linked-list-cycle-ii/)
 
-* Fifth day:
+* Fourth day: `链表的操作-反转`          [[92]反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii/)
+
+* Fifth day: `链表的应用-双向链表`       [[146]LRU 缓存机制](https://leetcode-cn.com/problems/lru-cache/) 
 
 * Sixth day: 复习本周题目
 

@@ -355,8 +355,8 @@ func (this *MyLinkedList) DeleteAtIndex(index int)  {
 }
 
 3. 复杂度分析：
-时间复杂度：O(n):遍历整个链表
-空间复杂度：O(n)
+时间复杂度：向表头插入O(1),get(index):O(index),addAtTail:O(n),deleteAtIndex:O(index)
+空间复杂度：O(1)
 
 4. 总结：
 4.1: 链表真的都是细节，设计重于实现，说起来容易，做起来真的有点难

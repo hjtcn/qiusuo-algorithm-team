@@ -39,6 +39,11 @@
 // 👍 1499 👎 0
 package main
 
+import (
+	"fmt"
+	"strconv"
+)
+
 //leetcode submit region begin(Prohibit modification and deletion)
 /**
  * Definition for singly-linked list.
@@ -54,6 +59,22 @@ package main
 第二次遍历 (len - n) 个节点，到达目标节点的前一个节点
 删除当前节点的后一个节点
  */
+type ListNode struct {
+	Val int
+	Next *ListNode
+}
+
+func initLinkList(arr []int) *ListNode {
+	link_list := &ListNode{0, nil}
+	temp := link_list
+
+	for _, val := range arr {
+		temp.Next = &ListNode{val, nil}
+		temp = temp.Next
+	}
+
+	return link_list.Next
+}
 
 func removeNthFromEnd(head *ListNode, n int) *ListNode {
 	temp := head
@@ -64,30 +85,50 @@ func removeNthFromEnd(head *ListNode, n int) *ListNode {
 		length++
 	}
 
-	if length > n {
+	if n > length || n < 1 {
 		return nil
 	}
 
-	if length == n {
-		head = head.Next
-		return head
-	}
-
 	temp_list := head
-	for i := (length - n); i > 0; i-- {
-		if i == 1 {
-			p := temp_list.Next
-			temp_list.Next = p.Next
-			p.Next = nil
-			break
+	if length == n {
+		return head.Next
+	} else {
+		for i := (length - n); i > 0; i-- {
+			if i == 1 {
+				p := temp_list.Next
+				temp_list.Next = p.Next
+				p.Next = nil
+				break
+			}
+
+			temp_list = temp_list.Next
 		}
-		temp = temp.Next
 	}
 
 	return head
 }
 
-func main()  {
+func (this *ListNode) printLinkList() {
+	str := ""
+	for this != nil {
+		if this.Next != nil {
+			str = str + strconv.Itoa(this.Val) + "->"
+		} else {
+			str = str + strconv.Itoa(this.Val)
+		}
+		
+		this = this.Next
+	}
 
+	fmt.Println(str)
+}
+
+func main()  {
+	arr := []int{1, 2, 3}
+	obj := initLinkList(arr)
+	//obj.printLinkList()
+
+	hah := removeNthFromEnd(obj, 2)
+	hah.printLinkList()
 }
 //leetcode submit region end(Prohibit modification and deletion)

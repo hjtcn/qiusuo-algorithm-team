@@ -17,15 +17,15 @@
 
 #### The second week
 
-* First day: 
+* First day: `二叉树`[[222]完全二叉树的节点个数](https://leetcode-cn.com/problems/count-complete-tree-nodes/)
 
-* Second day: 
+* Second day: `二叉树`[[剑指 Offer 55]I. 二叉树的深度](https://leetcode-cn.com/problems/er-cha-shu-de-shen-du-lcof/)
 
-* Third day: 
+* Third day: `二叉树`[1325. 删除给定值的叶子节点](https://leetcode-cn.com/problems/delete-leaves-with-a-given-value/)
 
-* Fourth day: 
+* Fourth day: `二叉树`[[剑指 Offer II 056]二叉搜索树中两个节点之和](https://leetcode-cn.com/problems/opLdQZ/)
 
-* Fifth day: 
+* Fifth day: `二叉树`[[剑指 Offer II 055]二叉搜索树迭代器](https://leetcode-cn.com/problems/kTOapQ/)
 
 * Sixth day: 复习本周题目
 

@@ -33,15 +33,15 @@
 
 #### The third week
 
-* First day: 
+* First day: `二叉树`[[102]二叉树的层序遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)
 
-* Second day:
+* Second day:`二叉树`[[236]二叉树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/)
 
-* Third day: 
+* Third day: `二叉树`[[98]验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/)
 
-* Fourth day: 
+* Fourth day: `二叉树`[[450]删除二叉搜索树中的节点](https://leetcode-cn.com/problems/delete-node-in-a-bst/)
 
-* Fifth day: 
+* Fifth day: `二叉树`[[449]序列化和反序列化二叉搜索树](https://leetcode-cn.com/problems/serialize-and-deserialize-bst/)
 
 * Sixth day: 复习本周题目
 

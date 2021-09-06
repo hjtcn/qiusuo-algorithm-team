@@ -49,15 +49,15 @@
 
 #### The fourth week
 
-* First day: 
+* First day: `二叉树`[[701]二叉搜索树中的插入操作](https://leetcode-cn.com/problems/insert-into-a-binary-search-tree/)
 
-* Second day: 
+* Second day: `二叉树`[[501]二叉搜索树中的众数](https://leetcode-cn.com/problems/find-mode-in-binary-search-tree/)
 
-* Third day: 
+* Third day:  `二叉树`[[112]路径总和](https://leetcode-cn.com/problems/path-sum/)
 
-* Fourth day: 
+* Fourth day: `二叉树`[[669]修剪二叉搜索树](https://leetcode-cn.com/problems/trim-a-binary-search-tree/)
 
-* Fifth day:
+* Fifth day:  `二叉树`[[654]最大二叉树](https://leetcode-cn.com/problems/maximum-binary-tree/)
 
 * Sixth day: 复习本周题目
 

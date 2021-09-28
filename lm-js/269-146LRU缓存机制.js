@@ -52,7 +52,17 @@ lRUCache.get(4);    // 返回 4
 
     加强记忆。。。主要还是map的使用太浅
 
-
+    题解:链表。链表的删除新增还是用的不熟练，尽管它的时间复杂度很优。删除新增多练习用链表
+    伪代码在这个题上就可以多练习，别害怕。
+    看题目，想要什么方法。
+    这道题需求还是比较明确的。
+    难点在put:1.能记录最久未使用的key
+             2.能判断是否超出容量。
+             3.是新增，还是更新
+    2，3其实还好，主要问题就在如何记录使用的新旧记录。
+    因此我们可以想到使用数组，链表等去记录。
+    考验我们能力也就是从数组到链表的优化了。
+    养成使用链表遍历记录的过程
 
 */
 
@@ -99,6 +109,85 @@ LRUCache.prototype.put = function(key, value) {
  * var param_1 = obj.get(key)
  * obj.put(key,value)
  */
+/**
+ * @param {number} capacity
+ */
+ var NodeList=function(){
+    this.prev=null
+    this.next=null
+    this.val=null
+    this.key=null
+}
+var LRUCache = function(capacity) {
+   this.size=0
+   this.capacity=capacity
+   this.map=new Map()
+   //双向链表
+   this.head=new NodeList()
+   this.tail=new NodeList()
+   this.head.next=this.tail
+   this.tail.prev=this.head
+};
+LRUCache.prototype.moveToHead= function(node) {
+   this.deleteFromList(node)
+   this.addToHead(node)
+};
+LRUCache.prototype.addToHead = function(node) {
+   node.prev=this.head
+   node.next=this.head.next
+   this.head.next.prev=node
+   this.head.next=node
+};
+LRUCache.prototype.deleteFromList= function(node) {
+   let prev=node.prev
+   let next=node.next
+   prev.next=next
+   next.prev=prev
+};
+LRUCache.prototype.deleteNoUsed= function(node) {
+   let target=this.tail.prev
+   this.deleteFromList(target)
+   return target
+};
+/** 
+* @param {number} key
+* @return {number}
+*/
+LRUCache.prototype.get = function(key) {
+   if(this.map.has(key)){
+       let node=this.map.get(key)
+       this.moveToHead(node)
+       return node.val
+   }
+   return -1
+};
+
+/** 
+* @param {number} key 
+* @param {number} value
+* @return {void}
+*/
+LRUCache.prototype.put = function(key, value) {
+   //先构建put，再get
+   if(!this.map.has(key))
+   {let node=new NodeList()
+   node.key=key
+   node.val=value
+   this.map.set(key,node)
+   this.addToHead(node)
+   this.size++;
+   if(this.size>this.capacity){
+       let target=this.deleteNoUsed()
+       this.size--;
+       this.map.delete(target.key)
+   }
+   }
+   else{
+       let node=this.map.get(key)
+       node.val=value
+       this.moveToHead(node)
+   }
+};
 
 /*
     时间复杂度：O(1)
@@ -109,4 +198,7 @@ LRUCache.prototype.put = function(key, value) {
     思考：map不止set,get,has.
     还有keys().next().value。
     迭代器的使用，我知道的太少了。。。
+
+    看完题解才想到双向链表，知识储备不行，而且链表掌握的水平让我更习惯用数组去处理
+
 */

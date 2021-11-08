@@ -1,7 +1,6 @@
 <?php
 /*
  * @Descripttion: 周一冲冲冲
- * @Author: wangtao10@qianxin.com
  * @Date: 2020-12-07 08:54:33
  * @LastEditTime: 2020-12-07 18:37:30
  */

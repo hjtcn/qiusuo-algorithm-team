@@ -1,7 +1,6 @@
 <?php
 /*
  * @Descripttion: 补一下周四的题
- * @Author: wangtao10@qianxin.com
  * @Date: 2020-12-04 18:56:48
  * @LastEditTime: 2020-12-04 19:02:56
  */

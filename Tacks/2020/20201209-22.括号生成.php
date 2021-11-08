@@ -1,9 +1,8 @@
 <?php
 /*
  * @Descripttion: 周三 括号生成
- * @Author: wangtao10@qianxin.com
  * @Date: 2020-12-09 09:50:05
- * @LastEditTime: 2020-12-09 11:36:56
+ * @LastEditTime: 2021-11-08 09:57:50
  */
 
 
